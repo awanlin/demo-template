@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage-demo-template
+  description: An example of a Backstage Software Template.
+  annotations:
+    github.com/project-slug: awanlin/demo-template
+    backstage.io/techdocs-ref: dir:.
+    demo.backstage.io/techdocs-builder: local
+spec:
+  type: website
+  owner: backstage/maintainers
+  lifecycle: experimental
