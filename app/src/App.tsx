@@ -1,10 +1,14 @@
 import rocket from './assets/rocket.gif';
 import './App.css';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  });
   return (
     <>
-      <div>
+      <div data-theme="dark">
         <div className="row">
           <div>
             <img

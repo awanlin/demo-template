@@ -1,7 +1,11 @@
-import templateRocket from './assets/backstage-software-templates-icon-5.gif';
+import rocket from './assets/rocket.gif';
 import './App.css';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', '${{ values.mode }}');
+  });
   return (
     <>
       <div>
@@ -9,12 +13,12 @@ function App() {
           <div>
             <img
               className="rocket"
-              src={templateRocket}
+              src={rocket}
               alt="Software Template Rocket Animation"
             />
           </div>
           <div className="column right">
-            <h1>Boosters are a go Your Name Here!</h1>
+            <h1>Boosters are a go ${{ values.name }}!</h1>
             <h2>
               This is the results of the demo Software Template you just
               completed.
@@ -25,6 +29,7 @@ function App() {
             </h3>
 
             <ul>
+            {% if 'writing-templates' in values.topics %}
               <li>
                 <a
                   href="https://backstage.io/docs/features/software-templates/writing-templates"
@@ -33,6 +38,8 @@ function App() {
                   Writing Templates
                 </a>
               </li>
+              {% endif %}
+              {% if 'input-examples' in values.topics %}
               <li>
                 <a
                   href="https://backstage.io/docs/features/software-templates/input-examples"
@@ -41,6 +48,8 @@ function App() {
                   Input Examples
                 </a>
               </li>
+              {% endif %}
+              {% if 'builtin-actions' in values.topics %}
               <li>
                 <a
                   href="https://backstage.io/docs/features/software-templates/builtin-actions"
@@ -49,6 +58,8 @@ function App() {
                   Builtin Actions
                 </a>
               </li>
+              {% endif %}
+              {% if 'writing-custom-actions' in values.topics %}
               <li>
                 <a
                   href="https://backstage.io/docs/features/software-templates/writing-custom-actions"
@@ -57,6 +68,8 @@ function App() {
                   Writing Custom Actions
                 </a>
               </li>
+              {% endif %}
+              {% if 'writing-custom-field-extensions' in values.topics %}
               <li>
                 <a
                   href="https://backstage.io/docs/features/software-templates/writing-custom-field-extensions"
@@ -65,6 +78,8 @@ function App() {
                   Writing Custom Field Extension
                 </a>
               </li>
+              {% endif %}
+              {% if 'adding-templates' in values.topics %}
               <li>
                 <a
                   href="https://backstage.io/docs/features/software-templates/adding-templates"
@@ -73,6 +88,7 @@ function App() {
                   Adding your own Templates
                 </a>
               </li>
+              {% endif %}
             </ul>
           </div>
         </div>
