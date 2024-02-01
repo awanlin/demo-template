@@ -4,11 +4,11 @@ import { useEffect } from 'react';
 
 function App() {
   useEffect(() => {
-    document.documentElement.setAttribute('data-theme', 'dark');
+    document.documentElement.setAttribute('data-theme', 'light');
   });
   return (
     <>
-      <div data-theme="dark">
+      <div>
         <div className="row">
           <div>
             <img
@@ -18,7 +18,7 @@ function App() {
             />
           </div>
           <div className="column right">
-            <h1>Boosters are a go Your Name Here!</h1>
+            <h1>Boosters are a go Andre!</h1>
             <h2>
               This is the results of the demo Software Template you just
               completed.
@@ -29,6 +29,7 @@ function App() {
             </h3>
 
             <ul>
+            
               <li>
                 <a
                   href="https://backstage.io/docs/features/software-templates/writing-templates"
@@ -37,14 +38,9 @@ function App() {
                   Writing Templates
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://backstage.io/docs/features/software-templates/input-examples"
-                  target="_blank"
-                >
-                  Input Examples
-                </a>
-              </li>
+              
+              
+              
               <li>
                 <a
                   href="https://backstage.io/docs/features/software-templates/builtin-actions"
@@ -53,14 +49,9 @@ function App() {
                   Builtin Actions
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://backstage.io/docs/features/software-templates/writing-custom-actions"
-                  target="_blank"
-                >
-                  Writing Custom Actions
-                </a>
-              </li>
+              
+              
+              
               <li>
                 <a
                   href="https://backstage.io/docs/features/software-templates/writing-custom-field-extensions"
@@ -69,14 +60,8 @@ function App() {
                   Writing Custom Field Extension
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://backstage.io/docs/features/software-templates/adding-templates"
-                  target="_blank"
-                >
-                  Adding your own Templates
-                </a>
-              </li>
+              
+              
             </ul>
           </div>
         </div>
