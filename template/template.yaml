@@ -51,7 +51,7 @@ spec:
             enumNames:
               - Writing Templates
               - Input Examples
-              - builtin-actions
+              - Builtin Actions
               - Writing Custom Actions
               - Writing Custom Field Extensions
               - Adding Your Own Templates
